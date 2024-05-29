@@ -1,27 +1,34 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+NB: This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 
-## Development server
+# How I did it...
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project showcases my portfolio and previous works using Angular. The purpose of this web app is to present my skills and projects in a structured and visually appealing manner. Below are videos demonstrating the progress of the app development:
 
-## Code scaffolding
+## Purpose of the App
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The main goal of this web app is to serve as a portfolio to display my previous works, skills, and accomplishments in the field of web development and UI design. It includes sections for my projects, an about me section, and a way for potential clients or employers to view my work.
 
-## Build
+## Progress Videos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 1. Unstyled Barebones Start Showcase
+*Adding the barebone components*
 
-## Running unit tests
+[Watch the video](https://res.cloudinary.com/ddss6c7zr/video/upload/v1717008240/how%20i%20did%20iit/04_zitqig.mov)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 2. First Release Candidate, Nearly Finished and Styled
+*Nearly finished and styled*
 
-## Running end-to-end tests
+[Watch the video](https://res.cloudinary.com/ddss6c7zr/video/upload/v1717007879/how%20i%20did%20iit/01_imkebl.mov)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Deployed App
 
-## Further help
+The deployed app is available [here](https://portfolio-ochre-six-86.vercel.app/) and I continue to improve it.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## To-Do Items
+
+- Remove placeholder images
+- Apply theme (PrimeNG styling library)
+- Improve styling overall
+- Add 1st project, Unity3d Augmented Reality
