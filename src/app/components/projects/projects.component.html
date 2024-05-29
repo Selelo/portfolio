@@ -1,0 +1,11 @@
+<div class="projects" id="projects">
+    <h2>Projects</h2>
+    @for (work of works; track work) {
+    <div class="work-item">
+        <h3>{{ work.title }}</h3>
+        <p>{{ work.description }}</p>
+        <img [src]="work.imageUrl" alt="{{ work.title }} screenshot">
+        <a [href]="work.link" target="_blank">View Project</a>
+    </div>
+    }
+</div>
