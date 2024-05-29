@@ -1,9 +1,13 @@
-.about {
-    padding: 50px 20px;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.about p {
-    margin: 10px 0;
-}
+.about-container {
+    display: flex;
+    padding: 50px;
+  }
+  
+  .about-text {
+    flex: 1; /* Take up remaining space */
+  }
+  
+  .about-image {
+    flex: 1; /* Take up remaining space */
+  }
+  
