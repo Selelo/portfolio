@@ -6,11 +6,20 @@ import { HeroComponent } from './components/hero/hero.component';
 import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
 import { HeaderComponent } from './components/header/header.component';
 import { isPlatformBrowser } from '@angular/common';
+import { LinksScrollerComponent } from './components/links-scroller/links-scroller.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AboutComponent, ProjectsComponent, HeroComponent, BackToTopComponent, HeaderComponent],
+  imports: [
+    RouterOutlet,
+    AboutComponent,
+    ProjectsComponent,
+    HeroComponent,
+    BackToTopComponent,
+    HeaderComponent,
+    LinksScrollerComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
