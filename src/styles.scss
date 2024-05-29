@@ -1,5 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  // background-image: url('./assets/hex-img.jpeg'); // might consider a different image
+  background-color: #141414;
+}
+
+.soft-bevel {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+}
+
+.soft-bevel:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.1);
+}

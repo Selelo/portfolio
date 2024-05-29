@@ -1,13 +1,23 @@
 .about-container {
-    display: flex;
-    padding: 50px;
+  display: flex;
+  padding: 50px;
+  color: whitesmoke;
+}
+
+.about-text {
+  flex: 1;
+  /* Take up remaining space */
+  color: whitesmoke;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+
+  /* Take up remaining space */
+  img {
+    width: 300px;
+    height: auto;
   }
-  
-  .about-text {
-    flex: 1; /* Take up remaining space */
-  }
-  
-  .about-image {
-    flex: 1; /* Take up remaining space */
-  }
-  
+
+}

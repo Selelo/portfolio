@@ -1,12 +1,11 @@
-<div class="projects" id="projects">
-    <h2>Projects</h2>
-    @for (work of works; track work; let index = $index) {
-    <div class="parent work-item">
-        <div [class]="'div'+index+1">
-            <h3>{{ work.title }}</h3>
-            <p [innerHTML]="work.description  | safeHtml"></p>
-            <img [src]="work.imageUrl" alt="{{ work.title }} screenshot">
-            <a [href]="work.link" target="_blank">View Project</a>
+<h2>Projects</h2>
+
+<div class="projects-container" id="projects">
+        @for (work of works; track work; let index = $index) {
+        <div class="project">
+                <h3>{{ work.title }}</h3>
+                <a [href]="work.link" target="_blank">Go To Project</a>
+                <p [innerHTML]="work.description | safeHtml"></p>
+                <img [src]="work.imageUrl" alt="{{ work.title }} screenshot">
         </div>
-    </div>
-    }
+        }

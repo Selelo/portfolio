@@ -1,5 +1,25 @@
-.projects {
-    padding: 50px 20px;
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Distribute projects evenly */
+    padding: 20px;
+    /* Gentle padding */
+}
+
+.project {
+    width: calc(45% - 10px);
+    /* Two projects per row with padding between them */
+    margin-bottom: 20px;
+    /* Padding between rows */
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.project:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .work-item {
@@ -9,12 +29,18 @@
     border-radius: 5px;
 }
 
-.work-item img {
-    width: 100%;
-    height: auto;
+img {
+    width: 500px;
+    height: 300px;
+    object-fit: fill;
 }
 
-.work-item a {
+a {
     text-decoration: none;
-    color: #007bff;
+    color: #c300ff;
+}
+
+h2 {
+    color: whitesmoke;
+    padding: 20px 0 0 20px;
 }

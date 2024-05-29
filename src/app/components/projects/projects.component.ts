@@ -10,6 +10,10 @@ import { SafeHtmlPipe } from '../../pipes/safe-html.pipe';
 })
 export class ProjectsComponent {
   works = WORKS;
+
+  viewProject(link: string) {
+    window.open(link, '_blank');
+  }
 }
 
 export const WORKS = [
@@ -26,7 +30,7 @@ export const WORKS = [
     <p>This web app is intended for Absa insurance policyholders who seek a straightforward, digital solution to manage their insurance needs anytime, anywhere. It's ideal for individuals who prefer the convenience of handling their insurance matters online rather than through traditional phone calls or in-person visits.</p>
   </div>
   `,
-    imageUrl: '/assets/aic_ss.jpg',
+    imageUrl: 'https://res.cloudinary.com/ddss6c7zr/image/upload/v1716991403/my-portfolio-assets/aic_ss_jno3lm.jpg',
     link: 'https://insurance.absa.africa/iss/'
   },
   {
@@ -42,7 +46,7 @@ export const WORKS = [
     <p>This web app is intended for potential Absa insurance customers who want a quick and easy way to get insurance quotes. It is ideal for individuals seeking new insurance policies and preferring the convenience and speed of a digital-first solution.</p>
   </div>
   `,
-    imageUrl: '/assets/coming_soon.jpeg',
+    imageUrl: 'https://res.cloudinary.com/ddss6c7zr/image/upload/v1716991403/my-portfolio-assets/coming_soon_ya7hi3.jpg',
     link: 'https://insurance.absa.africa/iss/instantquote/'
   },
   {
@@ -58,14 +62,26 @@ export const WORKS = [
     <p>This meticulous development effort showcases my technical capabilities and commitment to delivering high-quality digital solutions. The website serves as a central hub for the company's services, providing valuable information and resources their clients and visitors.</p>
   </div>
   `,
-    imageUrl: '/assets/infobyte.jpg',
+    imageUrl: 'https://res.cloudinary.com/ddss6c7zr/image/upload/v1716991410/my-portfolio-assets/infobyte_ewqhkl.jpg',
     link: 'https://infobytetech.co.za/'
   },
   {
-  title: 'InfoByte Technologies',
-  description: ``,
-  imageUrl: '../../../assets/coming_soon.jpeg',
-  link: 'https://infobytetech.co.za/'
-},
+    title: 'White Hat Gaming',
+    description: `
+  <p>I worked on 21 casinos and Sportsbook apps UI and 2 white label casino for EU and US customers. Also worked on a shared library based on and 14 and PHP for the legacy components. These house the white label parts and allow for full customization and toggling.</p>
+<p>Some casinos are:</p>
+<ul>
+  <li><a href="https://www.casigo.com/">Casigo</a></li>
+  <li><a href="https://www.captainspins.com/">CaptainSpins</a></li>
+  <li><a href="https://www.vegasloungecasino.com/">VegasLounge</a></li>
+  <li><a href="https://www.slotnite.com/">Slotnite</a></li>
+  <li><a href="https://www.21casino.com/en/">21casino</a></li>
+</ul>
+<p>These examples showcase the variety of projects you've been involved in, each with its unique branding and user experience.</p>
+<p>Overall, your experience demonstrates a strong understanding of UI development for the online gaming industry, along with the ability to create customizable solutions to meet diverse market needs.</p>
+`,
+    imageUrl: 'https://res.cloudinary.com/ddss6c7zr/image/upload/v1716991403/my-portfolio-assets/coming_soon_ya7hi3.jpg',
+    link: 'https://www.whitehatgaming.com/'
+  },
   // Add more projects as needed
 ];
