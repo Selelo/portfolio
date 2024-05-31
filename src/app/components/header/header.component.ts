@@ -1,5 +1,5 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -22,6 +22,10 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HeaderComponent {
   isVisible = false;
+  
+  @ViewChild('hero') heroSection!: ElementRef;
+  @ViewChild('projects') projectsSection!: ElementRef;
+  @ViewChild('about') aboutSection!: ElementRef;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -30,5 +34,25 @@ export class HeaderComponent {
 
   get headerState() {
     return this.isVisible ? 'in' : 'out';
+  }
+
+  scrollToSection(section: string) {
+    let element: ElementRef;
+
+    switch (section) {
+      case 'hero':
+        element = this.heroSection;
+        break;
+      case 'projects':
+        element = this.projectsSection;
+        break;
+      case 'about':
+        element = this.aboutSection;
+        break;
+      default:
+        return;
+    }
+
+    element.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
 }

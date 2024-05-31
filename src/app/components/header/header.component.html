@@ -1,3 +1,9 @@
 <header [@fadeInOut]="headerState" class="navbar">
-    <div class="navbar-brand">My Portfolio</div>
+    <nav>
+        <div (click)="scrollToSection('hero')" class="navbar-brand">My Portfolio</div>
+
+        <!-- <div (click)="scrollToSection('projects')">Projects</div>
+        <div (click)="scrollToSection('about')">About Me</div> -->
+      </nav>
 </header>
+  
