@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { SafeHtmlPipe } from '../../pipes/safe-html.pipe';
-
+import {MatCardModule} from '@angular/material/card';
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [SafeHtmlPipe],
+  imports: [SafeHtmlPipe, MatCardModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

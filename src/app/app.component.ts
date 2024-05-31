@@ -5,8 +5,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
 import { HeaderComponent } from './components/header/header.component';
-import { isPlatformBrowser } from '@angular/common';
-import { LinksScrollerComponent } from './components/links-scroller/links-scroller.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +17,7 @@ import { LinksScrollerComponent } from './components/links-scroller/links-scroll
     HeroComponent,
     BackToTopComponent,
     HeaderComponent,
-    LinksScrollerComponent
+    CarouselComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

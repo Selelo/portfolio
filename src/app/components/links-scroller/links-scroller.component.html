@@ -1,9 +1,0 @@
-<div class="links-scroller-container">
-    <div class="links-scroller">
-        @for (link of links; track $index) {
-        <div class="link-item">
-            <img (click)="viewProject(link.url)" class="view-project-button" [src]="link.logo">
-        </div>
-        }
-    </div>
-</div>
